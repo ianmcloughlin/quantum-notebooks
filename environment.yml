@@ -1,8 +1,0 @@
-name: qiskit_env
-channels:
-  - conda-forge
-dependencies:
-  - numpy
-  - matplotlib
-  - pip:
-    - qiskit[visualization]
