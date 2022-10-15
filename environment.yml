@@ -1,13 +1,12 @@
-name: example-environment
+name: qiskit_env
 channels:
   - conda-forge
 dependencies:
   - numpy
-  - psutil
-  - toolz
+  - scipy
   - matplotlib
-  - dill
   - pandas
-  - partd
-  - bokeh
-  - dask
+  - seaborn
+  - scikit-learn
+  - pip:
+    - qiskit[visualization]
