@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  jupyter:
+    platform: linux/amd64
+    build: .
+    image: jupyter-qiskit
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/home/jovyan/repo
+    environment:
+      JUPYTER_ENABLE_LAB: "yes"
+      GRANT_SUDO: "yes"
